@@ -15,6 +15,7 @@
 		73C6B5E224B17A680070F22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C6B5E024B17A680070F22B /* LaunchScreen.storyboard */; };
 		73C6B5ED24B17A680070F22B /* WordScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C6B5EC24B17A680070F22B /* WordScrambleTests.swift */; };
 		73C6B5F824B17A680070F22B /* WordScrambleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C6B5F724B17A680070F22B /* WordScrambleUITests.swift */; };
+		73C6B60624B17C600070F22B /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73C6B60524B17C600070F22B /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		73C6B5F324B17A680070F22B /* WordScrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C6B5F724B17A680070F22B /* WordScrambleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITests.swift; sourceTree = "<group>"; };
 		73C6B5F924B17A680070F22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C6B60524B17C600070F22B /* start.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				73C6B5DE24B17A680070F22B /* Assets.xcassets */,
 				73C6B5E024B17A680070F22B /* LaunchScreen.storyboard */,
 				73C6B5E324B17A680070F22B /* Info.plist */,
+				73C6B60524B17C600070F22B /* start.txt */,
 			);
 			path = WordScramble;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C6B5E224B17A680070F22B /* LaunchScreen.storyboard in Resources */,
+				73C6B60624B17C600070F22B /* start.txt in Resources */,
 				73C6B5DF24B17A680070F22B /* Assets.xcassets in Resources */,
 				73C6B5DD24B17A670070F22B /* Main.storyboard in Resources */,
 			);
