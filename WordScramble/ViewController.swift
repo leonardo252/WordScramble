@@ -67,60 +67,60 @@ class ViewController: UITableViewController {
         print(answer)
         let lowerAnswer = answer.lowercased()
         
-        if isShorter(word: lowerAnswer){
-            if isSameStart(word: lowerAnswer) {
-                if isPossible(word: lowerAnswer) {
-                    if isOriginal(word: lowerAnswer) {
-                        if isReal(word: lowerAnswer) {
-                            usedWords.insert(lowerAnswer, at: 0)
+//         if isShorter(word: lowerAnswer){
+//             if isSameStart(word: lowerAnswer) {
+//                 if isPossible(word: lowerAnswer) {
+//                     if isOriginal(word: lowerAnswer) {
+//                         if isReal(word: lowerAnswer) {
+//                             usedWords.insert(lowerAnswer, at: 0)
 
-                            let indexPath = IndexPath(row: 0, section: 0)
-                            tableView.insertRows(at: [indexPath], with: .automatic)
+//                             let indexPath = IndexPath(row: 0, section: 0)
+//                             tableView.insertRows(at: [indexPath], with: .automatic)
 
-                            return
-                        } else {
-                            showErrorMenssage(errorTitle: "Word not recognied", errorMessage: "You can't just make them up, you know!")
-                        }
-                    } else {
-                        showErrorMenssage(errorTitle: "Word already used", errorMessage: "Be more original!")
-                    }
-                } else {
-                    guard let title = title else { return }
-                    showErrorMenssage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title.lowercased())")
-                }
-            } else {
-                showErrorMenssage(errorTitle: "Same of start word", errorMessage: "Be more original!")
-            }
-        } else {
-            showErrorMenssage(errorTitle: "Word is to shorter", errorMessage: "Let's try write more!")
-        }
+//                             return
+//                         } else {
+//                             showErrorMenssage(errorTitle: "Word not recognied", errorMessage: "You can't just make them up, you know!")
+//                         }
+//                     } else {
+//                         showErrorMenssage(errorTitle: "Word already used", errorMessage: "Be more original!")
+//                     }
+//                 } else {
+//                     guard let title = title else { return }
+//                     showErrorMenssage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title.lowercased())")
+//                 }
+//             } else {
+//                 showErrorMenssage(errorTitle: "Same of start word", errorMessage: "Be more original!")
+//             }
+//         } else {
+//             showErrorMenssage(errorTitle: "Word is to shorter", errorMessage: "Let's try write more!")
+//         }
         
         
-//        if !isShorter(word: lowerAnswer){
-//            showErrorMenssage(errorTitle: "Word is to shorter", errorMessage: "Let's try write more!")
-//            return
-//        }
-//
-//        if !isSameStart(word: lowerAnswer) {
-//            showErrorMenssage(errorTitle: "Same of start word", errorMessage: "Be more original!")
-//            return
-//        }
-//
-//        if !isPossible(word: lowerAnswer) {
-//            guard let title = title else { return }
-//            showErrorMenssage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title.lowercased())")
-//            return
-//        }
-//
-//        if !isOriginal(word: lowerAnswer) {
-//            showErrorMenssage(errorTitle: "Word already used", errorMessage: "Be more original!")
-//            return
-//        }
-//
-//        if !isReal(word: lowerAnswer) {
-//            showErrorMenssage(errorTitle: "Word not recognied", errorMessage: "You can't just make them up, you know!")
-//            return
-//        }
+       if !isShorter(word: lowerAnswer){
+           showErrorMenssage(errorTitle: "Word is to shorter", errorMessage: "Let's try write more!")
+           return
+       }
+
+       if !isSameStart(word: lowerAnswer) {
+           showErrorMenssage(errorTitle: "Same of start word", errorMessage: "Be more original!")
+           return
+       }
+
+       if !isPossible(word: lowerAnswer) {
+           guard let title = title else { return }
+           showErrorMenssage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title.lowercased())")
+           return
+       }
+
+       if !isOriginal(word: lowerAnswer) {
+           showErrorMenssage(errorTitle: "Word already used", errorMessage: "Be more original!")
+           return
+       }
+
+       if !isReal(word: lowerAnswer) {
+           showErrorMenssage(errorTitle: "Word not recognied", errorMessage: "You can't just make them up, you know!")
+           return
+       }
         
         usedWords.insert(lowerAnswer, at: 0)
         
